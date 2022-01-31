@@ -4,8 +4,7 @@ class User
     private $name;
     private $lastname;
     private $cardNumber;
-    private $birthday;
-    private $address;
+    private $yob;   // anno di nascita
     private $email;
 
     public function __construct($_name, $_lastname, $_email)

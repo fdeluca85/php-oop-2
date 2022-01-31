@@ -14,4 +14,21 @@ class Product
         $this->category = $_category;
         $this->price = $_price;
     }
+
+    public function getNameProduct()
+    {
+        return $this->nameProduct;
+    }
+    public function getBrand()
+    {
+        return $this->brand;
+    }
+    public function getCategory()
+    {
+        return $this->category;
+    }
+    public function getPrice()
+    {
+        return $this->price;
+    }
 }
