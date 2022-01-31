@@ -9,9 +9,9 @@ class Product
 
     public function __construct($_nameProduct, $_brand, $_category, $_price)
     {
-        $this->nomeProdotto = $_nameProduct;
-        $this->marca = $_brand;
-        $this->categoria = $_category;
-        $this->prezzo = $_price;
+        $this->nameProduct = $_nameProduct;
+        $this->brand = $_brand;
+        $this->category = $_category;
+        $this->price = $_price;
     }
 }
