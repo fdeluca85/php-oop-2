@@ -6,12 +6,14 @@ class User
     private $cardNumber;
     private $yob;   // anno di nascita
     private $email;
+    private $status;
 
-    public function __construct($_name, $_lastname, $_email)
+    public function __construct($_name, $_lastname, $_email, $_status)
     {
         $this->name = $_name;
         $this->lastname = $_lastname;
-        $this->cardNumber = $_email;
+        $this->email = $_email;
+        $this->status = $_status;
     }
     public function getName()
     {
@@ -26,5 +28,9 @@ class User
     public function getEmail()
     {
         return $this->email;
+    }
+    public function getStatus()
+    {
+        return $this->status;
     }
 }

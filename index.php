@@ -1,6 +1,7 @@
 <?php
 require_once __DIR__ . '/classes/product.php';
 require_once __DIR__ . '/classes/user.php';
+require_once __DIR__ . '/classes/discount.php';
 
 // prodotti in vendita
 $products = [
@@ -15,13 +16,13 @@ $products = [
 // var_dump($products);
 
 // acquirenti
-$sonia = new User("Sonia", "Viola", "viola_so@gmail.com");
-// var_dump($sonia);
-$mario = new User("Mario", "Rossi", "ross-mario@gmail.com");
+$sonia = new User("Sonia", "Viola", "viola_so@gmail.com", "Vip");
+var_dump($sonia);
+$mario = new User("Mario", "Rossi", "ross-mario@gmail.com", "Vip");
 // var_dump($mario);
-$luca = new User("Luca", "Gialli", "lucag@gmail.com");
+$luca = new User("Luca", "Gialli", "lucag@gmail.com", "Normal");
 // var_dump($luca);
-$chiara = new User("Chiara", "Verdi", "verdi_chiara@gmail.com");
+$chiara = new User("Chiara", "Verdi", "verdi_chiara@gmail.com", "No");
 // var_dump($chiara);
 
 ?>
